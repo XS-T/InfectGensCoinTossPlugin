@@ -73,6 +73,8 @@ dependencies {
 	paperDevBundle(paper_version)
 	compileOnly("io.papermc.paper:paper-api:$paper_version")
 
+	//VaultAPI
+	compileOnly("com.github.MilkBowl:VaultAPI:1.7")
 
 	//LuckPerms
 	compileOnly("net.luckperms:api:5.4")
@@ -156,8 +158,8 @@ tasks {
 bukkit {
 	name = project_display_name
 	version = project_version
-	authors = listOf("JailHome Team", *project_owners.split(",").toTypedArray())
+	authors = listOf("InfectGens Team", *project_owners.split(",").toTypedArray())
 	main = "$project_package.$project_plugin_class"
 	apiVersion = "1.18"
-	depend = listOf("LuckPerms")
+	depend = listOf("Vault")
 }

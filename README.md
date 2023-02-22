@@ -1,1 +1,1 @@
-RawGens Core Plugin
+IfectGens Gamble Plugin

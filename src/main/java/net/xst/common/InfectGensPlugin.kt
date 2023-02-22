@@ -22,7 +22,7 @@ import java.util.function.Function
 import kotlin.reflect.KClass
 
 //TODO: Move this to a separate project once we have an actual server and a maven repo
-abstract class RawGensPlugin : SuspendingJavaPlugin() {
+abstract class InfectGensPlugin : SuspendingJavaPlugin() {
 	private lateinit var injector: Injector
 
 	lateinit var commandManager: PaperCommandManager<Player>
