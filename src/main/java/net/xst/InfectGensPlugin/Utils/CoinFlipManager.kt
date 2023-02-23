@@ -24,7 +24,7 @@ class CoinFlipManager @Inject constructor(private val plugin: InfectGensCorePlug
 			vault_econ.depositPlayer(target,bets[target]!!)
 			return
 		}
-		if(CFManager.coinToss() == 0 && results[player] == InfectGensCorePlugin.Companion.CoinFlipResult.HEADS){
+		if(CFManager.coinToss() == 0 ){
 			winner = player
 			loser = target
 		}else{
